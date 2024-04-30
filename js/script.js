@@ -3,7 +3,9 @@
 const display = document.getElementById("display")
 
 function appendToDisplay(input) {
-    if (input === 'x') input = '*';
+    if (input === '×') input = '*';
+    if (input === '÷') input = '/';
+    if (input === '−') input = '-';
 
     if (isOperator(input) && isOperator(lastCharacterInDisplay())) {
         return; // Prevent consecutive operators

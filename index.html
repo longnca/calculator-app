@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
@@ -13,22 +14,22 @@
             <button onclick="clearDisplay()" class="operator-btn">AC</button>
             <button onclick="appendToDisplay('+/-')" class="operator-btn">+/-</button>
             <button onclick="appendToDisplay('%')" class="operator-btn">%</button>
-            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('÷')" class="operator-btn">÷</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('x')" class="operator-btn">x</button>
+            <button onclick="appendToDisplay('×')" class="operator-btn">×</button>
             <button onclick="appendToDisplay('4')">4</button>
             <button onclick="appendToDisplay('5')">5</button>
             <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('−')" class="operator-btn">−</button>
             <button onclick="appendToDisplay('1')">1</button>
             <button onclick="appendToDisplay('2')">2</button>
             <button onclick="appendToDisplay('3')">3</button>
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="removeLastCharacter()">B</button>
+            <button onclick="removeLastCharacter()"><i class="material-icons">backspace</i></button>
             <button onclick="calculate()" class="equal-btn">=</button>
         </div>
     </div>

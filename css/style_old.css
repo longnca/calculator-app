@@ -21,15 +21,13 @@ body {
 /* Styling for the display input of the calculator */
 #display {
     width: 100%;
-    padding: 100px 20px 20px; 
+    padding: 20px; 
     font-size: 3rem; /* 4vw if going for responsive font size */
     text-align: right;
     border: none;
     background-color: hsl(0, 0%, 5%);
     color: white;
     box-sizing: border-box; /* Include padding and border in the element's width and height */
-    pointer-events: none; /* Prevents the element from being the target of mouse events */
-    user-select: none; /* Prevents text selection */
 }
 
 /* Grid layout for calculator keys */
@@ -42,19 +40,15 @@ body {
 
 /* Styling for all buttons */
 button {
-    width: 100%;
-    aspect-ratio: 1;
-    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;
     font-size: 1.75rem;
     font-weight: normal;
     cursor: pointer;
-    transition: background-color 0.2s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 button:hover {
@@ -68,7 +62,6 @@ button:active {
 /* Styling for operator buttons only */
 .operator-btn {
     background-color: hsl(0, 0%, 10%);
-    color: hsl(25, 100%, 55%);
 }
 
 .operator-btn:hover {
@@ -81,17 +74,13 @@ button:active {
 
 /* Styling for equal button */
 .equal-btn {
-    background-color: hsl(25, 100%, 55%);
+    background-color: hsl(35, 100%, 55%);
 }
 
 .equal-btn:hover {
-    background-color: hsl(25, 100%, 65%);
+    background-color: hsl(35, 100%, 65%);
 }
 
 .equal-btn:active {
-    background-color: hsl(25, 100%, 75%);
-}
-
-.material-icons {
-    color: hsl(25, 100%, 55%);
+    background-color: hsl(35, 100%, 75%);
 }
