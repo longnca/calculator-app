@@ -75,7 +75,7 @@ function removeLastCharacter() {
     }
 }
 
-// "+/-"" Button: Function to toggle the sign of the number displayed
+// +/- Button: Function to toggle the sign of the number displayed
 function toggleSign() {
     let parts = display.value.split(/([\+\-\*\/])/);
     if (parts.length === 1) {
@@ -94,4 +94,16 @@ function toggle(part) {
         return '-' + part; // add minus sign if it's positive
     }
     return part;
+}
+
+// % Button: Function to calculate percentage
+function calculatePercentage() {
+    try {
+        let result = math.evaluate(display.value.replace(/,/g, ""));
+        let percentage = result * 100;
+        display.value = new Intl.NumberFormat().format(percentage) + "%";
+    }
+    catch(error) {
+        display.value = "Error";
+    }
 }
