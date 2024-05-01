@@ -22,7 +22,7 @@ body {
 #display {
     width: 100%;
     padding: 100px 20px 20px; 
-    font-size: 3rem; /* 4vw if going for responsive font size */
+    font-size: 3.5rem; /* 4vw if going for responsive font size */
     text-align: right;
     border: none;
     background-color: hsl(0, 0%, 5%);
@@ -69,6 +69,7 @@ button:active {
 .operator-btn {
     background-color: hsl(0, 0%, 10%);
     color: hsl(25, 100%, 55%);
+    font-size: 1.5rem;
 }
 
 .operator-btn:hover {

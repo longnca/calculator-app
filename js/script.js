@@ -1,8 +1,10 @@
+// Get the display element 
 const display = document.getElementById("display");
 
 // Set display to '0' initially
 display.value = "0";
 
+// Function to display input values
 function appendToDisplay(input) {
     if (input === '×') input = '*';
     if (input === '÷') input = '/';
@@ -30,13 +32,14 @@ function appendToDisplay(input) {
     }
 }
 
+// Function to reset the display to "0" after pressing the Clear button
 function clearDisplay() {
     display.value = "0";
 }
 
+// Function to evaluate the math operations
 function calculate() {
     try {
-        // use math.evaluate then format the output
         display.value = new Intl.NumberFormat().format(math.evaluate(display.value.replace(/,/g, '')));
     }
     catch(error) {
@@ -52,12 +55,11 @@ function lastCharacterInDisplay() {
     return display.value.slice(-1);
 }
 
+// Function to format display values, adding thousand separators (e.g. 10,000)
 function formatDisplay() {
-    // split the display value at operators to preserve formatting of individual numbers
     let parts = display.value.split(/([\+\-\*\/])/);
     let formattedParts = parts.map(part => {
         if (!isOperator(part) && part != "") {
-            // remove existing commas for correct parsing and reformat
             return new Intl.NumberFormat().format(Number(part.replace(/,/g, '')));
         }
         return part;
