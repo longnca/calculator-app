@@ -1,6 +1,6 @@
 # Calculator App (Basic version)
 
-![App UI](./assets/calculator_app_ui_design.png)
+![App UI](./assets/calculator_app_ui_design_2.png)
 
 ## Project overview
 
